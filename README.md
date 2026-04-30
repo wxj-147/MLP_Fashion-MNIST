@@ -10,5 +10,5 @@ venv\Scripts\activate # Windows
 pip install numpy matplotlib # 安装依赖
 
 # 脚本运行
-train.py中在最后注释了一个训练函数的测试代码，用于检测训练代码是否正常运行  
-完整的训练主函数在random_search.py中，若要重复实验只需运行该脚本
+train.py中在最后注释了一个训练函数的测试代码，指定了参数，用于检测训练代码能否正常运行  
+完整的训练主函数在random_search.py中，在该脚本中执行了随机搜索调节参数，在不同参数中保留最佳模型，并进行训练过程、参数影响、错误样本的可视化，直接运行random_search.py脚本即可重复实验
