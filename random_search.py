@@ -349,6 +349,9 @@ class SimpleHyperparameterSearch:
         print(f"  测试准确率: {test_accuracy:.4f}")
         print(f"  验证准确率: {self.best_result['best_val_acc']:.4f} (最佳模型)")
         
+        # 打印混淆矩阵
+        print_confusion_matrix(confusion_matrix, self.loader.class_names)
+        
         # 保存测试结果
         test_result = {
             'test_accuracy': test_accuracy,
